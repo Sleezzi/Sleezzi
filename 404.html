@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erreur 404</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        video {
+            height: 100%;
+            width: 100%;
+            clip-path: url(#text-overlay);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        svg {
+            font-size: 20vh;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+    <svg>
+        <clipPath id="text-overlay">
+            <text x="50%" y="50%" fill="white" text-anchor="middle">
+                Erreur 404
+            </text>
+        </clipPath>
+    </svg>
+    <video src="/blueink.mp4" muted loop autoplay></video>
+    <h2 style="margin: 15% 0 0 0;">Il semblerai que la page que vous avez demandé n'existe pas</h2>
+</body>
+</html>
