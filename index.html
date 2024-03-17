@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sleezzi</title>
+    <meta name="author" content="Sleezzi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+</head>
+<body id="particles-js">
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            background: black;
+            color: white;
+            overflow: hidden;
+        }
+        main {
+            height: 70%;
+            width: 70%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, calc(70% / 4 + 1rem));
+            justify-content: center;
+            align-items: center;
+            gap: 2rem 2rem;
+            position: absolute;
+            left: 15%;
+            top: 15%;
+            background: #FFFFFF0A;
+            border-radius: 1rem;
+            overflow: hidden auto;
+        }
+        .app {
+            height: 5rem;
+            width: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 1rem;
+            padding: 1rem;
+            color: white;
+            text-decoration: none;
+            background: #FFFFFF0A;
+        }
+        .app img {
+            height: 70%;
+            border-radius: 1rem;
+        }
+        .app p {
+            margin: 0;
+        }
+        ::-webkit-scrollbar {
+            width: 1vh;
+            height: 1vh;
+            background: #333;
+            cursor: pointer;
+        }
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #00000000;
+        }
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #111;
+            border-radius: 5vh;
+        }
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: black;
+        }
+        @media screen and (max-width: 767px) {
+            main {
+                gap: 2.5rem 2.5rem;
+            }
+            .app {
+                height: 2.5rem;
+                width: 2.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border-radius: 1rem;
+                background: #FFFFFF0A;
+                padding: 1.5rem;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    </style>
+    <main>
+        <a class="app" href="https://redeye.sleezzi.fr/">
+            <img src="https://redeye.sleezzi.fr/cdn/img/Logo/RedEye_White.png">
+            <p>RedEye</p>
+        </a>
+        <a class="app" href="https://darkreader.sleezzi.fr/">
+            <img src="https://darkreader.sleezzi.fr/favicon.ico">
+            <p>DarkReader</p>
+        </a>
+        <a class="app" href="https://github.com/Sleezzi">
+            <img src="https://github.githubassets.com/favicons/favicon-dark.png">
+            <p>GitHub</p>
+        </a>
+        <a class="app" href="https://calculip.sleezzi.fr">
+            <img src="/cdn/img/ip.png">
+            <p>Calcul IP</p>
+        </a>
+        <a class="app" href="/connections.html">
+            <img src="/cdn/img/connections.png">
+            <p>Connections</p>
+        </a>
+    </main>
+    <script src="/cdn/js/particles.js"></script>
+    <script src="/cdn/js/app.js"></script>
+</body>
+</html>
